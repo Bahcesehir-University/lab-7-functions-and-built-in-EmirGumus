@@ -56,6 +56,8 @@ int maxOfThree(int a, int b, int c)
         return b;
     }else if ( a<c && b<c ){
         return c;
+    }else if ( a == b && b == c){
+        return a;
     }else{
         return 0;
     }
