@@ -61,7 +61,7 @@ int maxOfThree(int a, int b, int c)
     }
 }
 
-double averageOfArray(double arr[], int size){
+double average(double arr[], int size){
     double sum=0;
     for(int i=0; i<size; i++){
         sum += arr[i];
@@ -280,10 +280,10 @@ int main()
     cout << "Fifth double" << endl;
     cin >> grades[4];
     
-    double average = averageOfArray(grades, SIZE);
-    cout << "Average = " << average << endl;
-    cout << "Square Root of Average = " << sqrt(average) << endl;
-    cout << "Average Rounded to 2 decimal = " << round(average*100)/100 << endl;
+    double avrg = average(grades, SIZE);
+    cout << "Average = " << avrg << endl;
+    cout << "Square Root of Average = " << sqrt(avrg) << endl;
+    cout << "Average Rounded to 2 decimal = " << round(avrg*100)/100 << endl;
 
     cout << "\n=== Lab Complete! ===" << endl;
     return 0;
